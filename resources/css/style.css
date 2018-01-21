@@ -1,0 +1,276 @@
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: inherit;
+  height: 2.5rem;
+  padding-left: 11.5rem;
+  margin-top: 0rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.logo p {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 14rem;
+  width: 25.5rem;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+  margin-left: 11.5rem;
+}
+
+.banner-container {
+  display: flex;
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 25rem;
+  background-position: center;
+
+}
+
+.banner h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 4rem 2rem 3rem;
+  margin-top: 0rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  margin-bottom: 0rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  align-items: center;
+  justify-content: space-around;
+  background-color: firebrick;
+  color: white;
+
+}
+
+.menu ul {
+display: flex;
+list-style: none;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+
+.menu-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 25rem;
+  width: 70%;
+  padding-bottom: 0rem;
+}
+
+.watch, .pen, .glasses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rem;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.watch img, .pen img {
+  height: 7rem;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glasses img {
+  height: 5rem;
+  width: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.watch p, .pen p {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 3rem;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+}
+
+.glasses p {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0rem;
+  width: 70%;
+}
+
+.location, .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35%;
+}
+
+.contact p {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.contact h6 {
+  margin-top: 0rem;
+  padding-top: 0rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+footer {
+  display: flex;
+  height: 12rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+footer p {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+span {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .watch, .pen {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+  span {
+    display: flex;
+  }
+  .menu ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+.logo p {
+  display: none;
+}
+.logo img {
+  align-items: center;
+}
+.banner p {
+  font-family: Helvetica;
+  font-size: 0.77rem;
+  font-weight: bold;
+}
+.banner h2 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.banner-container {
+  width: 100%;
+  align-items: flex-end;
+}
+.banner {
+  width: 100%;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  height: 4rem;
+  align-items: baseline;
+}
+.banner p {
+  margin-top: 0rem;
+  margin-bottom: 0.2rem;
+  padding-top: 1rem;
+}
+.banner h2 {
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  width: inherit;
+}
+
+ .pen {
+   width: 90%;
+ }
+ .watch, .glasses {
+   display: none;
+ }
+ .contact {
+   flex-direction: column;
+ }
+.location, .hours {
+  width: 90%;
+}
+.location {
+  margin-bottom: 0rem;
+}
+.hours {
+  padding-top: 0rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+}
